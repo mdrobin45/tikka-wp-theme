@@ -10,42 +10,7 @@
          rel="shortcut icon"
          href="./assets/images/favicon.ico"
          type="image/x-icon" />
-
-      <!-- Bootstrap 5 CSS -->
-      <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-
-      <!-- Fonts: Montserrat & Alata -->
-      <link rel="stylesheet" href="./assets/fonts/fonts.css" />
-
-      <!-- Font Awesome v-6.5.1 -->
-      <link rel="stylesheet" href="./assets/fontawesome-6.5.1/all.min.css" />
-      <link
-         rel="stylesheet"
-         href="./assets/fontawesome-6.5.1/fontawesome.min.css" />
-
-      <!-- Owl carousel v-2.3.4 basic stylesheet -->
-      <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-
-      <!-- Owl carousel v-2.3.4 theme stylesheet -->
-      <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
-
-      <!-- Scroll to top css -->
-      <link rel="stylesheet" href="./assets/css/scroll-to-top.css" />
-
-      <!-- AOS Animation -->
-      <link rel="stylesheet" href="./assets/css/aos.css" />
-
-      <!-- Magnific Css -->
-      <link rel="stylesheet" href="./assets/css/magnific.min.css" />
-
-      <!-- Mobile menu stylesheet -->
-      <link rel="stylesheet" href="./assets/css/mobile-menu.css" />
-
-      <!-- Custom CSS -->
-      <link rel="stylesheet" href="./assets/css/style.css" />
-
-      <!-- Responsive CSS -->
-      <link rel="stylesheet" href="./assets/css/responsive.css" />
+         <?php wp_head();?>
    </head>
    <body id="page-top">
       <main>
@@ -1686,34 +1651,6 @@
          <!-- Jquery -->
       </main>
 
-      <!-- Jquery v-3.7.1 -->
-      <script src="./assets/js/jquery/jquery-3.7.1.min.js"></script>
-
-      <!-- Popper Js -->
-      <script src="./assets/js/popper/popper.min.js"></script>
-
-      <!-- Bootstrap Js -->
-      <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
-
-      <!-- Counter JS -->
-      <script src="./assets/js/plugins/counter.js"></script>
-
-      <!-- Owl Carousel -->
-      <script src="./assets/js/plugins/owl.carousel.min.js"></script>
-
-      <!-- AOS Animation -->
-      <script src="./assets/js/plugins/aos.js"></script>
-
-      <!-- Magnific Js -->
-      <script src="./assets/js/plugins/magnific.min.js"></script>
-
-      <!-- Video popup -->
-      <script src="./assets/js/video-popup.js"></script>
-
-      <!-- Js counter -->
-      <script src="./assets/js/counter-custom.js"></script>
-
-      <!-- Custom Js -->
-      <script src="./assets/js/main.js"></script>
+      <?php wp_footer();?>
    </body>
 </html>
