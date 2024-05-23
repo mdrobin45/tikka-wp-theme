@@ -1302,7 +1302,8 @@
 
             <!-- Blog Cards -->
             <div class="row mt-5">
-               <?php while(have_posts()):the_post(); ?>
+
+               <?php query_posts('posts_per_page=3'); while(have_posts()):the_post(); ?>
                <div
                   data-aos="fade-up"
                   data-aos-delay="300"
@@ -1311,20 +1312,21 @@
                   <div class="p-0 text-capitalize blog-card-wrapper">
                      <div class="shine-image-wrapper">
                         <figure>
-                           <img
-                              class="w-100"
-                              src="<?php echo get_template_directory_uri();?>/assets/images/home/blog-1.png"
-                              alt="Blog-1" />
+                              <?php
+                              if(has_post_thumbnail()):the_post_thumbnail();
+                               endif;
+                              ?>
                         </figure>
                      </div>
                      <div class="blog-content">
                         <p class="gray-paragraph"><?php the_time('F j, Y')?></p>
-
-                        <a
+                        <div>
+                           <a
                            href="<?php the_permalink()?>"
                            class="home1-blog-card-title">
                            <?php the_title()?>
                         </a>
+                        </div>
                         <!-- Link button -->
                         <a class="link-btn" href="<?php the_permalink()?>"
                            >Learn More
