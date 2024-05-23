@@ -1302,7 +1302,7 @@
 
             <!-- Blog Cards -->
             <div class="row mt-5">
-               <!-- Card 1 -->
+               <?php while(have_posts()):the_post(); ?>
                <div
                   data-aos="fade-up"
                   data-aos-delay="300"
@@ -1318,84 +1318,22 @@
                         </figure>
                      </div>
                      <div class="blog-content">
-                        <p class="gray-paragraph">October 19, 2022</p>
+                        <p class="gray-paragraph"><?php the_time('F j, Y')?></p>
 
                         <a
-                           href="./single-blog.html"
+                           href="<?php the_permalink()?>"
                            class="home1-blog-card-title">
-                           Slooking to create a asa personal portfolio
+                           <?php the_title()?>
                         </a>
                         <!-- Link button -->
-                        <a class="link-btn" href="./single-blog.html"
+                        <a class="link-btn" href="<?php the_permalink()?>"
                            >Learn More
                            <i class="fa-solid fa-arrow-right btn-right-icon"></i
                         ></a>
                      </div>
                   </div>
                </div>
-
-               <!-- Card 2 -->
-               <div
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  data-aos-duration="1000"
-                  class="col-12 col-lg-4 blog-card-2">
-                  <div class="p-0 text-capitalize blog-card-wrapper">
-                     <div class="shine-image-wrapper">
-                        <figure>
-                           <img
-                              class="w-100"
-                              src="<?php echo get_template_directory_uri();?>/assets/images/home/blog-2.png"
-                              alt="Blog-1" />
-                        </figure>
-                     </div>
-                     <div class="blog-content">
-                        <p class="gray-paragraph">October 19, 2022</p>
-
-                        <a
-                           href="./single-blog.html"
-                           class="home1-blog-card-title">
-                           showcases your skills experiences and
-                        </a>
-                        <!-- Link button -->
-                        <a class="link-btn" href="./single-blog.html"
-                           >Learn More
-                           <i class="fa-solid fa-arrow-right btn-right-icon"></i
-                        ></a>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- Card 3 -->
-               <div
-                  data-aos="fade-up"
-                  data-aos-delay="500"
-                  data-aos-duration="1000"
-                  class="col-12 col-lg-4 blog-card-3">
-                  <div class="p-0 text-capitalize blog-card-wrapper">
-                     <div class="shine-image-wrapper">
-                        <figure>
-                           <img
-                              class="w-100"
-                              src="<?php echo get_template_directory_uri();?>/assets/images/home/blog-3.png"
-                              alt="Blog-1" />
-                        </figure>
-                     </div>
-                     <div class="blog-content">
-                        <p class="gray-paragraph">October 19, 2022</p>
-                        <a
-                           href="./single-blog.html"
-                           class="home1-blog-card-title">
-                           Here's a template you can use as
-                        </a>
-                        <!-- Link button -->
-                        <a class="link-btn" href="./single-blog.html"
-                           >Learn More
-                           <i class="fa-solid fa-arrow-right btn-right-icon"></i
-                        ></a>
-                     </div>
-                  </div>
-               </div>
+               <?php endwhile; ?>
             </div>
          </div>
          <!-- End: Blog section -->

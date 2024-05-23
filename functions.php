@@ -1,4 +1,6 @@
 <?php 
+// Theme Supports
+add_theme_support('post-thumbnails');
 
 // Load style and script files
 function tikka_load_scripts(){
