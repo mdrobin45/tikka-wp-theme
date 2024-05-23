@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Home - Tikka Portfolio</title>
+      <title><?php bloginfo('title')?> - <?php bloginfo('description')?></title>
 
       <!-- Favicon -->
       <link
@@ -18,7 +18,7 @@
          <nav id="mobile-nav" class="d-lg-none">
             <ul class="right-nav">
                <li>
-                  <img src="./assets/images/home/tikka-logo.png" alt="Logo" />
+                  <img src="<?php get_template_directory_uri();?>/assets/images/home/tikka-logo.png" alt="Logo" />
                </li>
             </ul>
             <label for="toggleMainNav" class="hamburger-menu"></label>
@@ -104,7 +104,7 @@
                   <a href="./index.html">
                      <div
                         class="d-flex align-items-center text-white m-0 text-uppercase gap-2">
-                        <img src="./assets/images/home/logo.svg" alt="Logo" />
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/home/logo.svg" alt="Logo" />
                         <h3>Tikka</h3>
                      </div>
                   </a>
@@ -278,7 +278,7 @@
                            href="#popup-with-something"
                            class="open-popup-link banner-play-button mt-4 mt-md-0">
                            <img
-                              src="./assets/images/home/banner-play-icon.svg"
+                              src="<?php echo get_template_directory_uri();?>/assets/images/home/banner-play-icon.svg"
                               alt="Banner Play Icon" />
                            <h4>Watch Now</h4>
                         </a>
@@ -305,7 +305,7 @@
                         <div class="banner-right-image-inner-wrapper">
                            <img
                               class="w-100"
-                              src="./assets/images/home/home-top-banner-right-image.png"
+                              src="<?php echo get_template_directory_uri();?>/assets/images/home/home-top-banner-right-image.png"
                               alt="Banner Right Image" />
                         </div>
                      </div>
@@ -387,7 +387,7 @@
                      <figure class="b-left-radius b-right-radius">
                         <img
                            class="w-100"
-                           src="./assets/images/home/aboutMe.png"
+                           src="<?php echo get_template_directory_uri();?>/assets/images/home/aboutMe.png"
                            alt="A men taking care of a dog" />
                      </figure>
                   </div>
@@ -399,7 +399,7 @@
                      class="about-badge">
                      <div class="badge-inner">
                         <img
-                           src="./assets/images/home/person-icon.svg"
+                           src="<?php echo get_template_directory_uri();?>/assets/images/home/person-icon.svg"
                            alt="Person Icon" />
                         <div class="badge-info-wrapper">
                            <h2 class="badge-title">3K+</h2>
@@ -503,7 +503,7 @@
                            data-aos-duration="1000"
                            class="d-flex align-items-center abt-need-help-wrapper">
                            <img
-                              src="./assets/images/home/phone-call-icon.png"
+                              src="<?php echo get_template_directory_uri();?>/assets/images/home/phone-call-icon.png"
                               alt="24 Hour Phone Call Icon" />
                            <div>
                               <p class="gray-paragraph">Need help?</p>
@@ -688,7 +688,7 @@
                      class="col-12 mt-lg-0 mt-3 col-lg-4 m-0">
                      <div class="service-card">
                         <img
-                           src="./assets/images/home/document-icon.png"
+                           src="<?php echo get_template_directory_uri();?>/assets/images/home/document-icon.png"
                            alt="Content Writing" />
                         <div class="my-30">
                            <h3 class="main-home-service-title">
@@ -717,7 +717,7 @@
                      class="col-12 mt-lg-0 mt-3 col-lg-4 m-0">
                      <div class="service-card">
                         <img
-                           src="./assets/images/home/history-icon.png"
+                           src="<?php echo get_template_directory_uri();?>/assets/images/home/history-icon.png"
                            alt="SEO optimization" />
                         <div class="my-30">
                            <h3>SEO optimization</h3>
@@ -744,7 +744,7 @@
                      class="col-12 col-lg-4 mt-lg-0 mt-3 m-0 mt-0 mt-lg-0 mt-md-4">
                      <div class="service-card">
                         <img
-                           src="./assets/images/home/home-icon.png"
+                           src="<?php echo get_template_directory_uri();?>/assets/images/home/home-icon.png"
                            alt="Graphic design" />
                         <div class="my-30">
                            <h3>Graphic design</h3>
@@ -779,7 +779,7 @@
                         data-aos-delay="100"
                         data-aos-duration="1000"
                         class="featured-image w-100 w-md-auto"
-                        src="./assets/images/home/featured-image.png"
+                        src="<?php echo get_template_directory_uri();?>/assets/images/home/featured-image.png"
                         alt="Feature Card Image" />
                   </div>
                   <div>
@@ -908,7 +908,7 @@
                            <figure class="b-left-radius">
                               <img
                                  class="portfolio-image w-100"
-                                 src="./assets/images/home/video-editing-portfolio.png"
+                                 src="<?php echo get_template_directory_uri();?>/assets/images/home/video-editing-portfolio.png"
                                  alt="Portfolio Image" />
                            </figure>
                         </div>
@@ -936,7 +936,7 @@
                         data-aos="fade-left"
                         data-aos-delay="100"
                         data-aos-duration="1000"
-                        src="./assets/images/home/portfolio-watermark.svg"
+                        src="<?php echo get_template_directory_uri();?>/assets/images/home/portfolio-watermark.svg"
                         alt="Watermark" />
                   </div>
                </div>
@@ -953,7 +953,7 @@
                            <figure class="b-left-radius">
                               <img
                                  class="portfolio-image w-100"
-                                 src="./assets/images/home/web-development-portfolio.png"
+                                 src="<?php echo get_template_directory_uri();?>/assets/images/home/web-development-portfolio.png"
                                  alt="Portfolio Image" />
                            </figure>
                         </div>
@@ -988,7 +988,7 @@
                      class="col-12 col-lg-4 d-lg-block d-none">
                      <img
                         class="w-75"
-                        src="./assets/images/home/portfolio-watermark-2.svg"
+                        src="<?php echo get_template_directory_uri();?>/assets/images/home/portfolio-watermark-2.svg"
                         alt="Watermark" />
                   </div>
                   <div
@@ -1001,7 +1001,7 @@
                            <figure class="b-left-radius">
                               <img
                                  class="portfolio-image w-100"
-                                 src="./assets/images/home/copywriting-portfolio.png"
+                                 src="<?php echo get_template_directory_uri();?>/assets/images/home/copywriting-portfolio.png"
                                  alt="Portfolio Image" />
                            </figure>
                         </div>
@@ -1088,42 +1088,42 @@
                <div class="item">
                   <div class="align-items-center d-flex justify-content-center">
                      <img
-                        src="./assets/images/home/company-5.png"
+                        src="<?php echo get_template_directory_uri();?>/assets/images/home/company-5.png"
                         alt="Travel" />
                   </div>
                </div>
                <div class="item">
                   <div class="align-items-center d-flex justify-content-center">
                      <img
-                        src="./assets/images/home/company-1.png"
+                        src="<?php echo get_template_directory_uri();?>/assets/images/home/company-1.png"
                         alt="Travel" />
                   </div>
                </div>
                <div class="item">
                   <div class="align-items-center d-flex justify-content-center">
                      <img
-                        src="./assets/images/home/company-2.png"
+                        src="<?php echo get_template_directory_uri();?>/assets/images/home/company-2.png"
                         alt="Travel" />
                   </div>
                </div>
                <div class="item">
                   <div class="align-items-center d-flex justify-content-center">
                      <img
-                        src="./assets/images/home/company-3.png"
+                        src="<?php echo get_template_directory_uri();?>/assets/images/home/company-3.png"
                         alt="Travel" />
                   </div>
                </div>
                <div class="item">
                   <div class="align-items-center d-flex justify-content-center">
                      <img
-                        src="./assets/images/home/company-4.png"
+                        src="<?php echo get_template_directory_uri();?>/assets/images/home/company-4.png"
                         alt="Travel" />
                   </div>
                </div>
                <div class="item">
                   <div class="align-items-center d-flex justify-content-center">
                      <img
-                        src="./assets/images/home/company-5.png"
+                        src="<?php echo get_template_directory_uri();?>/assets/images/home/company-5.png"
                         alt="Travel" />
                   </div>
                </div>
@@ -1193,7 +1193,7 @@
                            <div class="d-flex align-items-center gap-3">
                               <div>
                                  <img
-                                    src="./assets/images/home/testimonial-author-1.png"
+                                    src="<?php echo get_template_directory_uri();?>/assets/images/home/testimonial-author-1.png"
                                     alt="Profile Image" />
                               </div>
                               <div>
@@ -1227,7 +1227,7 @@
                            <div class="d-flex align-items-center gap-3">
                               <div>
                                  <img
-                                    src="./assets/images/home/testimonial-author-1.png"
+                                    src="<?php echo get_template_directory_uri();?>/assets/images/home/testimonial-author-1.png"
                                     alt="Profile Image" />
                               </div>
                               <div>
@@ -1257,7 +1257,7 @@
                            <div class="d-flex align-items-center gap-3">
                               <div>
                                  <img
-                                    src="./assets/images/home/testimonial-author-1.png"
+                                    src="<?php echo get_template_directory_uri();?>/assets/images/home/testimonial-author-1.png"
                                     alt="Profile Image" />
                               </div>
                               <div>
@@ -1313,7 +1313,7 @@
                         <figure>
                            <img
                               class="w-100"
-                              src="./assets/images/home/blog-1.png"
+                              src="<?php echo get_template_directory_uri();?>/assets/images/home/blog-1.png"
                               alt="Blog-1" />
                         </figure>
                      </div>
@@ -1345,7 +1345,7 @@
                         <figure>
                            <img
                               class="w-100"
-                              src="./assets/images/home/blog-2.png"
+                              src="<?php echo get_template_directory_uri();?>/assets/images/home/blog-2.png"
                               alt="Blog-1" />
                         </figure>
                      </div>
@@ -1377,7 +1377,7 @@
                         <figure>
                            <img
                               class="w-100"
-                              src="./assets/images/home/blog-3.png"
+                              src="<?php echo get_template_directory_uri();?>/assets/images/home/blog-3.png"
                               alt="Blog-1" />
                         </figure>
                      </div>
@@ -1433,7 +1433,7 @@
                            data-aos="fade-up"
                            data-aos-delay="100"
                            data-aos-duration="1000"
-                           src="./assets/images/home/footer-logo.png"
+                           src="<?php echo get_template_directory_uri();?>/assets/images/home/footer-logo.png"
                            alt="Logo" />
                         <h3
                            data-aos="fade-up"
@@ -1540,7 +1540,7 @@
                            class="d-flex footer-lst-news-list">
                            <div>
                               <img
-                                 src="./assets/images/home/latest-news-1.png"
+                                 src="<?php echo get_template_directory_uri();?>/assets/images/home/latest-news-1.png"
                                  alt="Blogs" />
                            </div>
                            <div>
@@ -1563,7 +1563,7 @@
                            class="d-flex footer-lst-news-list">
                            <div>
                               <img
-                                 src="./assets/images/home/latest-news-2.png"
+                                 src="<?php echo get_template_directory_uri();?>/assets/images/home/latest-news-2.png"
                                  alt="Blogs" />
                            </div>
                            <div>
