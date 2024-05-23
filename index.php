@@ -1319,7 +1319,7 @@
                         </figure>
                      </div>
                      <div class="blog-content">
-                        <p class="gray-paragraph"><?php the_time('F j, Y')?></p>
+                        <p class="gray-paragraph"><?php the_date()?></p>
                         <div>
                            <a
                            href="<?php the_permalink()?>"
